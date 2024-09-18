@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // const year = 2024
+        // const birthyear = prompt('Quel est votre année de naissance ?')
+
+        // const age = year - birthyear
+
+        // if (age <= 13) {
+        //     console.log('Nous vous conseillons de regarder Stitch')
+        // } else if (age > 13 && age < 18) {
+        //     console.log('Nous vous conseillons de regarder Matrix')
+        // }else {
+        //     console.log('Nous vous conseillons de regarder Events Evil')
+        // }
+
+
+
+        const number1 = prompt('Entrer votre premier nombre')
+        const number2 = prompt('Entrer votre deuxieme nombre')
+
+        const resultat = number1 * number2
+
+        if (resultat > 0) {
+            console.log(`${number1} * ${number2} = ${resultat} est positif`)
+        }else {
+            console.log(`${number1} * ${number2} = ${resultat} est negatif`)
+        }
+
+        let signe
+        if (isNaN(resultat)){
+            console.log("Le calcul est impossible")
+        } else {
+            if (resultat > 0) {
+            signe = "positif"
+        }else {
+            signe = 'négatif'
+        }
+        console.log(`${number1} * ${number2} = ${resultat} est ${signe}`)
+    }
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions JavaScript</title>
+    <script>
+
+        // let i = 0;
+        // // Boucle tans que i < 10
+        // while (i < 10) {
+        //     console.log('Bonjour ' +i )
+        //     i = i + 1
+        // }
+
+        // for (let i = 0; i < 10; i++) {
+        //     console.log('Bonjour ' +i )
+        // }
+
+        let notes = [12, 14, 8, 9, 15]
+        // for (let i = 0; i < notes.length; i++) {
+        //     console.log(notes[i])
+        // }
+
+        // // Condition speciale tableau
+        // for (let i in notes) {
+        //     console.log(i) //tenvoie les index
+        //     console.log(notes[i]) //tenvoie les valeurs
+        // }
+
+        for (let note of notes) {
+            console.log(note)
+            
+        }
+
+        let notes1 = {
+            math: 12,
+            science: 14,
+            francais: 8,
+            anglais: 9,
+            espagnol: 15
+        }
+
+        // for (let i in notes1) {
+        //     console.log(i) //tenvoie les index  
+        //     console.log(notes1[i]) //tenvoie les valeurs
+        // }
+
+
+        const greeting = 'Bonjour'
+        for (let letter in greeting) {
+            console.log(letter)
+        }
+        for (let letter of greeting) {
+            console.log(letter)
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

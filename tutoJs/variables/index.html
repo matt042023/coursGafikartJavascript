@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        const string = "Hello World";
+        const number = 3;
+        const numberDecimal = 3.14;
+        const boolean = true;
+        const tableau = [1, 2, 3];
+        const objet = { nom: "John", age: 30 };
+        const nul = null;
+        const indefini = undefined;
+
+        const salut = "salut"
+        const gens = "les gens"
+        const bonjour = salut + ' ' + gens
+        console.log(bonjour)
+        console.log(`${salut} ${gens}`)
+        const bonjour1 = `${salut} ${gens}`
+        const isMajeur = undefined
+
+        const notes = [
+            13,
+            14,
+            8,
+            9,
+            'hello',
+            [1, 2, 3]
+        ];
+
+        console.log(notes)
+        console.log(notes[4])
+        console.log(notes[5][2]) // renvoie valeur de l'index 2 dans le tableau situé à l'index  tu tableau notes
+
+        const person = {
+            firstname : "john", 
+            lastename : "doe",
+            age : 24,
+            notes : [12, 14, 15],
+            job : {
+                name : "informaticien", 
+                hours : 35
+            },
+            [bonjour] : "bonjour"
+        }
+        console.log(person)
+        console.log(person.firstname)
+        console.log(person.notes)
+        console.log(person.notes[1])
+        console.log(person.job.hours)
+
+        console.log(typeof notes) // Pour connaitre l type de la variable
+        console.log(typeof numberDecimal)
+        console.log(notes.length) // pour connaitre la taille du tableau
+        console.log(typeof person.job.name)
+        console.log(person.job.name.length) // pour connaitre la taille d'une chaine de caractère
+
+        console.log(4 + 3) // 7 addition
+        console.log(4 + "3") // 43 concatenation
+        console.log(4 * 3) // 12 multiplication
+        console.log(4 / 3) // 1.33 division
+        console.log(4 * '3') // Nan not a number
+        console.log(17 % 2) // 1 modulo
+
+        let a = 'salut'
+        let b = a
+        console.log(b)
+        b = 'hello'
+        console.log(b)
+        console.log(a)
+
+        const notes2 = notes
+        console.log(notes)
+        console.log(notes2)
+
+        notes[2] = 10
+        console.log(notes)
+        console.log(notes2)
+
+        let c = person.firstname
+        console.log(c)
+        c = 'marc'
+        console.log(c)
+        console.log(person.firstname)
+
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

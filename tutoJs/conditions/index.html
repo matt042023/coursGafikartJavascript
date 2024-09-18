@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        const age = 18
+
+        if(age !=''){
+            console.log(`Vous avez ${age} ans`)
+        }
+
+
+
+
+        if (age > 18) {
+            console.log('Vous etes majeur')
+        }
+        else if (age == 18) {
+            console.log('Vous avez 18 ans')
+        }
+        else {
+            console.log('Vous etes mineur')
+        }
+
+        switch(age) {
+            case age > 18 : 
+                console.log('Vous etes majeur')
+                break
+            case age == 18 :
+                console.log('Vous avez 18 ans')
+                break
+            default :
+                console.log('Vous etes mineur')
+        }
+
+        const pays = 'FR'
+        if(
+            (pays === 'FR' && age >= 18) || 
+            (pays === 'US' && age >= 16)
+            ) {
+            console.log('vous avez le droit de conduire')
+        } else {
+            console.log("Vous n'avez pas le droit de conduire")
+        }
+
+        const peutConduireEnFrance = pays ==='FR' && age >= 18
+        const peutConduireAuxEtatUnis = pays === 'US' && age >= 16
+
+        if (peutConduireEnFrance || peutConduireAuxEtatUnis) {
+            console.log('vous avez le droit de conduire')
+        } else {
+            console.log("Vous n'avez pas le droit de conduire")
+        }
+
+        if (peutConduireEnFrance) {
+            console.log('vous avez le droit de conduire en France')
+        } else if(peutConduireAuxEtatUnis){
+            console.log("vous avez le droit de conduire au Etats-Unis")
+        } else {
+            console.log("Vous n'avez pas le droit de conduire")
+        }
+
+        if(!peutConduireEnFrance && !peutConduireAuxEtatUnis) {
+            console.log("Vous n'avez pas le droit de conduire ")
+        } 
+
+        switch(pays) {
+            case 'FR' :
+                console.log('vous etes en France')
+                break
+            case 'US' :
+                console.log('vous etes aux Etats-Unis')
+                break
+            default :
+                console.log('vous n\'etes ni en France, ni aux Etats-Unis')
+                break
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

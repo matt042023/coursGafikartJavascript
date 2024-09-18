@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        const number = prompt('Entrer votre  chiffre')
+
+        if (number < 0 || number > 10) {
+            console.log('Le chiffre doit etre compris entre 0 et 10')
+        }else {
+            for (let i = 0; i < number; i++) {
+            console.log(i + 1)
+        }
+        }
+
+        let guess = 8
+        let chiffre 
+
+        while (chiffre !== guess) {
+            chiffre = prompt('Entrer votre chiffre') * 1
+            if (chiffre < guess) {
+                console.log('Trop petit')
+            }else if(chiffre > guess) {
+                console.log('Trop grand')
+            } else {
+                break
+            }
+        }
+        console.log('Bravo, vous avez deviné')
+
+
+
+
+        
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
